@@ -1,0 +1,27 @@
+--- a/harness/judge-v2.mjs
++++ b/harness/judge-v2.mjs
+@@ -243,16 +243,21 @@
+   const ids = Object.keys(answers).filter((id) => !onlyIds || onlyIds.has(id));
+   const missing = ids.filter((id) => !items[id] || !kp[id]);
+   if (missing.length) { console.error(`MISSING item or key points for ${missing.length} ids: ${missing.join(",")}`); process.exit(5); }
++  const inputSha = (id) => sha(JSON.stringify({
++    item: items[id], keyPoints: kp[id], answer: answers[id],
++    noOverride: has("--no-override"), refusalString: get("--refusal-string", null),
++  }));
+   const prev = readJsonl(out).filter((r) => r.ok);
+-  const stale = prev.filter((r) => r.promptSha !== JUDGE_PROMPT_SHA || r.model !== model || r.effort !== effort || r.repeat !== repeat || r.side !== side);
+-  if (stale.length) { console.error(`STALE: ${stale.length} rows in ${out} differ in prompt/model/effort/repeat/side; use a new --out`); process.exit(7); }
++  const stale = prev.filter((r) => r.promptSha !== JUDGE_PROMPT_SHA || r.model !== model || r.effort !== effort || r.repeat !== repeat || r.side !== side ||
++    !answers[r.id] || !items[r.id] || !kp[r.id] || r.inputSha !== inputSha(r.id));
++  if (stale.length) { console.error(`STALE: ${stale.length} rows in ${out} differ in inputs/prompt/model/effort/repeat/side; use a new --out`); process.exit(7); }
+   const done = new Set(prev.map((r) => r.id));
+   const todo = ids.filter((id) => !done.has(id));
+   console.log(`judge.v2 ${side} repeat ${repeat}: ${ids.length} items, ${todo.length} to do; prompt ${JUDGE_PROMPT_SHA.slice(0, 12)}; model ${model}/${effort}`);
+   const tasks = todo.map((id) => async () => {
+     const it = items[id]; const ans = answers[id]; const pts = kp[id].points; const K = pts.length;
+     const base = { id, side, repeat, K, kpSource: kp[id].source, judgeVersion: JUDGE_VERSION, promptSha: JUDGE_PROMPT_SHA, model, effort,
+-                   answerSha: sha(String(ans.text ?? "")), createdAt: new Date().toISOString() };
++                   inputSha: inputSha(id), answerSha: sha(String(ans.text ?? "")), createdAt: new Date().toISOString() };
+     const prepped = prepAnswer(ans.text);
+     const refusalStrings = (get("--refusal-string") ? [get("--refusal-string")] : []);
+     const traceDeclined = !!ans.declined || refusalStrings.some((x) => String(ans.text ?? "").trim() === x.trim());

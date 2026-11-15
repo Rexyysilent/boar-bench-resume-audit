@@ -1,0 +1,412 @@
+{
+  "sourceCommit": "b41a25acfabf89f1d015103ca1329554f985a257",
+  "sourceSha256": "9dc669c6ba8d5410c6347ad38b9eb041e6c0f0317dbdd7664ef32602fc692f37",
+  "fixedSha256": "6b8e1f18d732fcabe9d26e7a95583c3d253494e8cd5bea139f353661903494fa",
+  "modelCalls": 0,
+  "networkCalls": 0,
+  "mutations": 8,
+  "checks": 16,
+  "legacyCacheRejected": true,
+  "results": [
+    {
+      "variant": "answer_text",
+      "implementation": "original",
+      "firstRun": {
+        "status": 0,
+        "stdout": "judge.v2 app repeat 1: 1 items, 1 to do; prompt 3595d696549c; model claude-haiku-5-5/low\ndone <audit-dir>\\runs\\answer_text\\original\\judgments.jsonl: ok 1/1; ledger 0",
+        "stderr": ""
+      },
+      "unchangedResume": {
+        "status": 0,
+        "stdout": "judge.v2 app repeat 1: 1 items, 0 to do; prompt 3595d696549c; model claude-haiku-5-5/low\ndone <audit-dir>\\runs\\answer_text\\original\\judgments.jsonl: ok 1/1; ledger 0",
+        "stderr": ""
+      },
+      "changedResume": {
+        "status": 0,
+        "stdout": "judge.v2 app repeat 1: 1 items, 0 to do; prompt 3595d696549c; model claude-haiku-5-5/low\ndone <audit-dir>\\runs\\answer_text\\original\\judgments.jsonl: ok 1/1; ledger 0",
+        "stderr": ""
+      },
+      "cacheUnchanged": true,
+      "staleScore": {
+        "R": 1,
+        "s": 0,
+        "ce": false,
+        "ff": false,
+        "verdicts": [],
+        "ts": false,
+        "dangerous": false
+      }
+    },
+    {
+      "variant": "answer_text",
+      "implementation": "fixed",
+      "firstRun": {
+        "status": 0,
+        "stdout": "judge.v2 app repeat 1: 1 items, 1 to do; prompt 3595d696549c; model claude-haiku-5-5/low\ndone <audit-dir>\\runs\\answer_text\\fixed\\judgments.jsonl: ok 1/1; ledger 0",
+        "stderr": ""
+      },
+      "unchangedResume": {
+        "status": 0,
+        "stdout": "judge.v2 app repeat 1: 1 items, 0 to do; prompt 3595d696549c; model claude-haiku-5-5/low\ndone <audit-dir>\\runs\\answer_text\\fixed\\judgments.jsonl: ok 1/1; ledger 0",
+        "stderr": ""
+      },
+      "changedResume": {
+        "status": 7,
+        "stdout": "",
+        "stderr": "STALE: 1 rows in <audit-dir>\\runs\\answer_text\\fixed\\judgments.jsonl differ in inputs/prompt/model/effort/repeat/side; use a new --out"
+      },
+      "cacheUnchanged": true,
+      "staleScore": null
+    },
+    {
+      "variant": "decline_flag",
+      "implementation": "original",
+      "firstRun": {
+        "status": 0,
+        "stdout": "judge.v2 app repeat 1: 1 items, 1 to do; prompt 3595d696549c; model claude-haiku-5-5/low\ndone <audit-dir>\\runs\\decline_flag\\original\\judgments.jsonl: ok 1/1; ledger 0",
+        "stderr": ""
+      },
+      "unchangedResume": {
+        "status": 0,
+        "stdout": "judge.v2 app repeat 1: 1 items, 0 to do; prompt 3595d696549c; model claude-haiku-5-5/low\ndone <audit-dir>\\runs\\decline_flag\\original\\judgments.jsonl: ok 1/1; ledger 0",
+        "stderr": ""
+      },
+      "changedResume": {
+        "status": 0,
+        "stdout": "judge.v2 app repeat 1: 1 items, 0 to do; prompt 3595d696549c; model claude-haiku-5-5/low\ndone <audit-dir>\\runs\\decline_flag\\original\\judgments.jsonl: ok 1/1; ledger 0",
+        "stderr": ""
+      },
+      "cacheUnchanged": true,
+      "staleScore": {
+        "R": 1,
+        "s": 0,
+        "ce": false,
+        "ff": false,
+        "verdicts": [],
+        "ts": false,
+        "dangerous": false
+      }
+    },
+    {
+      "variant": "decline_flag",
+      "implementation": "fixed",
+      "firstRun": {
+        "status": 0,
+        "stdout": "judge.v2 app repeat 1: 1 items, 1 to do; prompt 3595d696549c; model claude-haiku-5-5/low\ndone <audit-dir>\\runs\\decline_flag\\fixed\\judgments.jsonl: ok 1/1; ledger 0",
+        "stderr": ""
+      },
+      "unchangedResume": {
+        "status": 0,
+        "stdout": "judge.v2 app repeat 1: 1 items, 0 to do; prompt 3595d696549c; model claude-haiku-5-5/low\ndone <audit-dir>\\runs\\decline_flag\\fixed\\judgments.jsonl: ok 1/1; ledger 0",
+        "stderr": ""
+      },
+      "changedResume": {
+        "status": 7,
+        "stdout": "",
+        "stderr": "STALE: 1 rows in <audit-dir>\\runs\\decline_flag\\fixed\\judgments.jsonl differ in inputs/prompt/model/effort/repeat/side; use a new --out"
+      },
+      "cacheUnchanged": true,
+      "staleScore": null
+    },
+    {
+      "variant": "question",
+      "implementation": "original",
+      "firstRun": {
+        "status": 0,
+        "stdout": "judge.v2 app repeat 1: 1 items, 1 to do; prompt 3595d696549c; model claude-haiku-5-5/low\ndone <audit-dir>\\runs\\question\\original\\judgments.jsonl: ok 1/1; ledger 0",
+        "stderr": ""
+      },
+      "unchangedResume": {
+        "status": 0,
+        "stdout": "judge.v2 app repeat 1: 1 items, 0 to do; prompt 3595d696549c; model claude-haiku-5-5/low\ndone <audit-dir>\\runs\\question\\original\\judgments.jsonl: ok 1/1; ledger 0",
+        "stderr": ""
+      },
+      "changedResume": {
+        "status": 0,
+        "stdout": "judge.v2 app repeat 1: 1 items, 0 to do; prompt 3595d696549c; model claude-haiku-5-5/low\ndone <audit-dir>\\runs\\question\\original\\judgments.jsonl: ok 1/1; ledger 0",
+        "stderr": ""
+      },
+      "cacheUnchanged": true,
+      "staleScore": {
+        "R": 1,
+        "s": 0,
+        "ce": false,
+        "ff": false,
+        "verdicts": [],
+        "ts": false,
+        "dangerous": false
+      }
+    },
+    {
+      "variant": "question",
+      "implementation": "fixed",
+      "firstRun": {
+        "status": 0,
+        "stdout": "judge.v2 app repeat 1: 1 items, 1 to do; prompt 3595d696549c; model claude-haiku-5-5/low\ndone <audit-dir>\\runs\\question\\fixed\\judgments.jsonl: ok 1/1; ledger 0",
+        "stderr": ""
+      },
+      "unchangedResume": {
+        "status": 0,
+        "stdout": "judge.v2 app repeat 1: 1 items, 0 to do; prompt 3595d696549c; model claude-haiku-5-5/low\ndone <audit-dir>\\runs\\question\\fixed\\judgments.jsonl: ok 1/1; ledger 0",
+        "stderr": ""
+      },
+      "changedResume": {
+        "status": 7,
+        "stdout": "",
+        "stderr": "STALE: 1 rows in <audit-dir>\\runs\\question\\fixed\\judgments.jsonl differ in inputs/prompt/model/effort/repeat/side; use a new --out"
+      },
+      "cacheUnchanged": true,
+      "staleScore": null
+    },
+    {
+      "variant": "context",
+      "implementation": "original",
+      "firstRun": {
+        "status": 0,
+        "stdout": "judge.v2 app repeat 1: 1 items, 1 to do; prompt 3595d696549c; model claude-haiku-5-5/low\ndone <audit-dir>\\runs\\context\\original\\judgments.jsonl: ok 1/1; ledger 0",
+        "stderr": ""
+      },
+      "unchangedResume": {
+        "status": 0,
+        "stdout": "judge.v2 app repeat 1: 1 items, 0 to do; prompt 3595d696549c; model claude-haiku-5-5/low\ndone <audit-dir>\\runs\\context\\original\\judgments.jsonl: ok 1/1; ledger 0",
+        "stderr": ""
+      },
+      "changedResume": {
+        "status": 0,
+        "stdout": "judge.v2 app repeat 1: 1 items, 0 to do; prompt 3595d696549c; model claude-haiku-5-5/low\ndone <audit-dir>\\runs\\context\\original\\judgments.jsonl: ok 1/1; ledger 0",
+        "stderr": ""
+      },
+      "cacheUnchanged": true,
+      "staleScore": {
+        "R": 1,
+        "s": 0,
+        "ce": false,
+        "ff": false,
+        "verdicts": [],
+        "ts": false,
+        "dangerous": false
+      }
+    },
+    {
+      "variant": "context",
+      "implementation": "fixed",
+      "firstRun": {
+        "status": 0,
+        "stdout": "judge.v2 app repeat 1: 1 items, 1 to do; prompt 3595d696549c; model claude-haiku-5-5/low\ndone <audit-dir>\\runs\\context\\fixed\\judgments.jsonl: ok 1/1; ledger 0",
+        "stderr": ""
+      },
+      "unchangedResume": {
+        "status": 0,
+        "stdout": "judge.v2 app repeat 1: 1 items, 0 to do; prompt 3595d696549c; model claude-haiku-5-5/low\ndone <audit-dir>\\runs\\context\\fixed\\judgments.jsonl: ok 1/1; ledger 0",
+        "stderr": ""
+      },
+      "changedResume": {
+        "status": 7,
+        "stdout": "",
+        "stderr": "STALE: 1 rows in <audit-dir>\\runs\\context\\fixed\\judgments.jsonl differ in inputs/prompt/model/effort/repeat/side; use a new --out"
+      },
+      "cacheUnchanged": true,
+      "staleScore": null
+    },
+    {
+      "variant": "key_points",
+      "implementation": "original",
+      "firstRun": {
+        "status": 0,
+        "stdout": "judge.v2 app repeat 1: 1 items, 1 to do; prompt 3595d696549c; model claude-haiku-5-5/low\ndone <audit-dir>\\runs\\key_points\\original\\judgments.jsonl: ok 1/1; ledger 0",
+        "stderr": ""
+      },
+      "unchangedResume": {
+        "status": 0,
+        "stdout": "judge.v2 app repeat 1: 1 items, 0 to do; prompt 3595d696549c; model claude-haiku-5-5/low\ndone <audit-dir>\\runs\\key_points\\original\\judgments.jsonl: ok 1/1; ledger 0",
+        "stderr": ""
+      },
+      "changedResume": {
+        "status": 0,
+        "stdout": "judge.v2 app repeat 1: 1 items, 0 to do; prompt 3595d696549c; model claude-haiku-5-5/low\ndone <audit-dir>\\runs\\key_points\\original\\judgments.jsonl: ok 1/1; ledger 0",
+        "stderr": ""
+      },
+      "cacheUnchanged": true,
+      "staleScore": {
+        "R": 1,
+        "s": 0,
+        "ce": false,
+        "ff": false,
+        "verdicts": [],
+        "ts": false,
+        "dangerous": false
+      }
+    },
+    {
+      "variant": "key_points",
+      "implementation": "fixed",
+      "firstRun": {
+        "status": 0,
+        "stdout": "judge.v2 app repeat 1: 1 items, 1 to do; prompt 3595d696549c; model claude-haiku-5-5/low\ndone <audit-dir>\\runs\\key_points\\fixed\\judgments.jsonl: ok 1/1; ledger 0",
+        "stderr": ""
+      },
+      "unchangedResume": {
+        "status": 0,
+        "stdout": "judge.v2 app repeat 1: 1 items, 0 to do; prompt 3595d696549c; model claude-haiku-5-5/low\ndone <audit-dir>\\runs\\key_points\\fixed\\judgments.jsonl: ok 1/1; ledger 0",
+        "stderr": ""
+      },
+      "changedResume": {
+        "status": 7,
+        "stdout": "",
+        "stderr": "STALE: 1 rows in <audit-dir>\\runs\\key_points\\fixed\\judgments.jsonl differ in inputs/prompt/model/effort/repeat/side; use a new --out"
+      },
+      "cacheUnchanged": true,
+      "staleScore": null
+    },
+    {
+      "variant": "conversation_history",
+      "implementation": "original",
+      "firstRun": {
+        "status": 0,
+        "stdout": "judge.v2 app repeat 1: 1 items, 1 to do; prompt 3595d696549c; model claude-haiku-5-5/low\ndone <audit-dir>\\runs\\conversation_history\\original\\judgments.jsonl: ok 1/1; ledger 0",
+        "stderr": ""
+      },
+      "unchangedResume": {
+        "status": 0,
+        "stdout": "judge.v2 app repeat 1: 1 items, 0 to do; prompt 3595d696549c; model claude-haiku-5-5/low\ndone <audit-dir>\\runs\\conversation_history\\original\\judgments.jsonl: ok 1/1; ledger 0",
+        "stderr": ""
+      },
+      "changedResume": {
+        "status": 0,
+        "stdout": "judge.v2 app repeat 1: 1 items, 0 to do; prompt 3595d696549c; model claude-haiku-5-5/low\ndone <audit-dir>\\runs\\conversation_history\\original\\judgments.jsonl: ok 1/1; ledger 0",
+        "stderr": ""
+      },
+      "cacheUnchanged": true,
+      "staleScore": {
+        "R": 1,
+        "s": 0,
+        "ce": false,
+        "ff": false,
+        "verdicts": [],
+        "ts": false,
+        "dangerous": false
+      }
+    },
+    {
+      "variant": "conversation_history",
+      "implementation": "fixed",
+      "firstRun": {
+        "status": 0,
+        "stdout": "judge.v2 app repeat 1: 1 items, 1 to do; prompt 3595d696549c; model claude-haiku-5-5/low\ndone <audit-dir>\\runs\\conversation_history\\fixed\\judgments.jsonl: ok 1/1; ledger 0",
+        "stderr": ""
+      },
+      "unchangedResume": {
+        "status": 0,
+        "stdout": "judge.v2 app repeat 1: 1 items, 0 to do; prompt 3595d696549c; model claude-haiku-5-5/low\ndone <audit-dir>\\runs\\conversation_history\\fixed\\judgments.jsonl: ok 1/1; ledger 0",
+        "stderr": ""
+      },
+      "changedResume": {
+        "status": 7,
+        "stdout": "",
+        "stderr": "STALE: 1 rows in <audit-dir>\\runs\\conversation_history\\fixed\\judgments.jsonl differ in inputs/prompt/model/effort/repeat/side; use a new --out"
+      },
+      "cacheUnchanged": true,
+      "staleScore": null
+    },
+    {
+      "variant": "override_option",
+      "implementation": "original",
+      "firstRun": {
+        "status": 0,
+        "stdout": "judge.v2 app repeat 1: 1 items, 1 to do; prompt 3595d696549c; model claude-haiku-5-5/low\ndone <audit-dir>\\runs\\override_option\\original\\judgments.jsonl: ok 1/1; ledger 0",
+        "stderr": ""
+      },
+      "unchangedResume": {
+        "status": 0,
+        "stdout": "judge.v2 app repeat 1: 1 items, 0 to do; prompt 3595d696549c; model claude-haiku-5-5/low\ndone <audit-dir>\\runs\\override_option\\original\\judgments.jsonl: ok 1/1; ledger 0",
+        "stderr": ""
+      },
+      "changedResume": {
+        "status": 0,
+        "stdout": "judge.v2 app repeat 1: 1 items, 0 to do; prompt 3595d696549c; model claude-haiku-5-5/low\ndone <audit-dir>\\runs\\override_option\\original\\judgments.jsonl: ok 1/1; ledger 0",
+        "stderr": ""
+      },
+      "cacheUnchanged": true,
+      "staleScore": {
+        "R": 1,
+        "s": 0,
+        "ce": false,
+        "ff": false,
+        "verdicts": [],
+        "ts": false,
+        "dangerous": false
+      }
+    },
+    {
+      "variant": "override_option",
+      "implementation": "fixed",
+      "firstRun": {
+        "status": 0,
+        "stdout": "judge.v2 app repeat 1: 1 items, 1 to do; prompt 3595d696549c; model claude-haiku-5-5/low\ndone <audit-dir>\\runs\\override_option\\fixed\\judgments.jsonl: ok 1/1; ledger 0",
+        "stderr": ""
+      },
+      "unchangedResume": {
+        "status": 0,
+        "stdout": "judge.v2 app repeat 1: 1 items, 0 to do; prompt 3595d696549c; model claude-haiku-5-5/low\ndone <audit-dir>\\runs\\override_option\\fixed\\judgments.jsonl: ok 1/1; ledger 0",
+        "stderr": ""
+      },
+      "changedResume": {
+        "status": 7,
+        "stdout": "",
+        "stderr": "STALE: 1 rows in <audit-dir>\\runs\\override_option\\fixed\\judgments.jsonl differ in inputs/prompt/model/effort/repeat/side; use a new --out"
+      },
+      "cacheUnchanged": true,
+      "staleScore": null
+    },
+    {
+      "variant": "refusal_string",
+      "implementation": "original",
+      "firstRun": {
+        "status": 0,
+        "stdout": "judge.v2 app repeat 1: 1 items, 1 to do; prompt 3595d696549c; model claude-haiku-5-5/low\ndone <audit-dir>\\runs\\refusal_string\\original\\judgments.jsonl: ok 1/1; ledger 0",
+        "stderr": ""
+      },
+      "unchangedResume": {
+        "status": 0,
+        "stdout": "judge.v2 app repeat 1: 1 items, 0 to do; prompt 3595d696549c; model claude-haiku-5-5/low\ndone <audit-dir>\\runs\\refusal_string\\original\\judgments.jsonl: ok 1/1; ledger 0",
+        "stderr": ""
+      },
+      "changedResume": {
+        "status": 0,
+        "stdout": "judge.v2 app repeat 1: 1 items, 0 to do; prompt 3595d696549c; model claude-haiku-5-5/low\ndone <audit-dir>\\runs\\refusal_string\\original\\judgments.jsonl: ok 1/1; ledger 0",
+        "stderr": ""
+      },
+      "cacheUnchanged": true,
+      "staleScore": {
+        "R": 1,
+        "s": 0,
+        "ce": false,
+        "ff": false,
+        "verdicts": [],
+        "ts": false,
+        "dangerous": false
+      }
+    },
+    {
+      "variant": "refusal_string",
+      "implementation": "fixed",
+      "firstRun": {
+        "status": 0,
+        "stdout": "judge.v2 app repeat 1: 1 items, 1 to do; prompt 3595d696549c; model claude-haiku-5-5/low\ndone <audit-dir>\\runs\\refusal_string\\fixed\\judgments.jsonl: ok 1/1; ledger 0",
+        "stderr": ""
+      },
+      "unchangedResume": {
+        "status": 0,
+        "stdout": "judge.v2 app repeat 1: 1 items, 0 to do; prompt 3595d696549c; model claude-haiku-5-5/low\ndone <audit-dir>\\runs\\refusal_string\\fixed\\judgments.jsonl: ok 1/1; ledger 0",
+        "stderr": ""
+      },
+      "changedResume": {
+        "status": 7,
+        "stdout": "",
+        "stderr": "STALE: 1 rows in <audit-dir>\\runs\\refusal_string\\fixed\\judgments.jsonl differ in inputs/prompt/model/effort/repeat/side; use a new --out"
+      },
+      "cacheUnchanged": true,
+      "staleScore": null
+    }
+  ]
+}
